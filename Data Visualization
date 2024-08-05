@@ -1,0 +1,41 @@
+(Tesla Stock Graph)
+
+import matplotlib.pyplot as plt
+
+def make_graph(data, title):
+    plt.figure(figsize=(12, 6))
+    plt.plot(data['Date'], data['Close'], label='Closing Price')
+    plt.xlabel('Date')
+    plt.ylabel('Price')
+    plt.title(title)
+    plt.legend()
+    plt.grid(True)
+    plt.xticks(rotation=45)
+    plt.tight_layout()
+
+# Load Tesla data
+tesla_data = pd.read_csv('tesla_data.csv')
+make_graph(tesla_data, 'Tesla Stock Price (2023-2024)')
+plt.savefig('tesla_stock_graph.png')
+plt.show()
+
+
+(GameStop Stock Graph)
+import matplotlib.pyplot as plt
+
+def make_graph(data, title):
+    plt.figure(figsize=(12, 6))
+    plt.plot(data['Date'], data['Close'], label='Closing Price')
+    plt.xlabel('Date')
+    plt.ylabel('Price')
+    plt.title(title)
+    plt.legend()
+    plt.grid(True)
+    plt.xticks(rotation=45)
+    plt.tight_layout()
+
+# Load GameStop data
+gme_data = pd.read_csv('gme_data.csv')
+make_graph(gme_data, 'GameStop Stock Price (2023-2024)')
+plt.savefig('gme_stock_graph.png')
+plt.show()

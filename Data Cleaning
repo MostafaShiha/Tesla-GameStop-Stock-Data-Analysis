@@ -1,0 +1,43 @@
+(Tesla Revenue Data)
+
+import requests
+from bs4 import BeautifulSoup
+import pandas as pd
+
+# URL for Tesla revenue data (replace with actual URL)
+url = "URL_OF_THE_PAGE_WITH_TESLA_REVENUE_DATA"
+response = requests.get(url)
+soup = BeautifulSoup(response.text, "html.parser")
+
+# Extract revenue data (this is an example; the exact code will depend on the HTML structure)
+tables = soup.find_all('table')
+df = pd.read_html(str(tables[0]))[0]
+
+# Display the last five rows
+print(df.tail())
+
+# Save the dataframe to a CSV file
+df.to_csv('tesla_revenue.csv', index=False)
+
+
+
+(GameStop Revenue Data)
+
+import requests
+from bs4 import BeautifulSoup
+import pandas as pd
+
+# URL for GameStop revenue data (replace with actual URL)
+url = "URL_OF_THE_PAGE_WITH_GME_REVENUE_DATA"
+response = requests.get(url)
+soup = BeautifulSoup(response.text, "html.parser")
+
+# Extract revenue data (this is an example; the exact code will depend on the HTML structure)
+tables = soup.find_all('table')
+df = pd.read_html(str(tables[0]))[0]
+
+# Display the last five rows
+print(df.tail())
+
+# Save the dataframe to a CSV file
+df.to_csv('gme_revenue.csv', index=False)

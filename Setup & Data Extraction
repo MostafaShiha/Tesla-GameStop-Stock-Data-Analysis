@@ -1,0 +1,33 @@
+Setup
+Install Required Libraries
+pip install yfinance beautifulsoup4 matplotlib pandas requests
+
+Data Extraction:
+
+(Tesla Stock Data)
+
+import yfinance as yf
+
+# Fetch Tesla stock data
+tesla_data = yf.download('TSLA', start='2023-01-01', end='2024-01-01')
+
+# Reset index and display the first five rows
+tesla_data.reset_index(inplace=True)
+print(tesla_data.head())
+
+# Save the dataframe to a CSV file
+tesla_data.to_csv('tesla_data.csv', index=False)
+
+(GameStop Stock Data)
+
+import yfinance as yf
+
+# Fetch GameStop stock data
+gme_data = yf.download('GME', start='2023-01-01', end='2024-01-01')
+
+# Reset index and display the first five rows
+gme_data.reset_index(inplace=True)
+print(gme_data.head())
+
+# Save the dataframe to a CSV file
+gme_data.to_csv('gme_data.csv', index=False)

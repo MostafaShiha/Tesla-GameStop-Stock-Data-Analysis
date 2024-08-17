@@ -1,2 +1,6 @@
-# Tesla-GameStop-Stock-Data-Analysis
-This project involves extracting, analyzing, and visualizing stock data for Tesla and GameStop. It demonstrates the use of yfinance for financial data extraction and BeautifulSoup for web scraping. The project also includes data visualization using matplotlib.
+👋 Hi, I’m Mostafa Shiha (@MostafaShiha) 
+- I’m interested in: Data Science, AI, and Startup Innovation  
+- Founder: CevonAI, an AI startup
+- I’m looking to collaborate on: AI, Data Science, and innovative tech projects  
+- How to reach me:
+[LinkedIn](https://www.linkedin.com/in/mostafashiha-5b658716b/) | [Instagram](https://www.instagram.com/mostafashihaofficial/)  
